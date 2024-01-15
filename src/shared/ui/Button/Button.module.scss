@@ -1,11 +1,11 @@
 .button {
   cursor: pointer;
+  color: var(--inverted-primary-color);
 }
 
 .clear {
   border: none;
   padding: 0;
-  margin: 0;
   background: none;
   outline: none;
 }
