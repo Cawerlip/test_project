@@ -3,5 +3,12 @@
     "public/locales",
     "src/shared/config/i18n"
   ],
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "stylelint.enable": true,
+  "css.validate": true,
+  "scss.validate": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
 }

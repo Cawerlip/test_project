@@ -1,4 +1,5 @@
 {
   "test": "test",
-  "translate": "translate"
+  "translate": "translate",
+  "loading": "loading"
  }
