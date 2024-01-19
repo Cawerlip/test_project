@@ -1,6 +1,6 @@
-import { AppLinkVariant } from "shared/ui/AppLink/AppLink"
-import { classNames } from "shared/lib/classNames"
-import { AppLink } from "shared/ui"
+import { AppLinkVariant } from 'shared/ui/AppLink/AppLink'
+import { classNames } from 'shared/lib/classNames'
+import { AppLink } from 'shared/ui'
 
 import style from './Navbar.module.scss'
 
@@ -15,15 +15,15 @@ export const Navbar = ({className}: NavbarProps) => {
         <AppLink 
           to={'/'}
           variant={AppLinkVariant.SECONDARY}
-          >
-            Main Page
+        >
+          Main Page
         </AppLink>
         <AppLink 
           to={'/about'} 
           variant={AppLinkVariant.SECONDARY}
-          >
-            About Page
-          </AppLink>
+        >
+          About Page
+        </AppLink>
       </div>
     </div>
   )

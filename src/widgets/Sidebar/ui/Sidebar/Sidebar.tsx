@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { classNames } from "shared/lib/classNames"
+import { useState } from 'react'
+import { classNames } from 'shared/lib/classNames'
 
 import style from './Sidebar.module.scss'
-import { LangSwitcher, ThemeSwitcher } from "shared/ui"
+import { LangSwitcher, ThemeSwitcher } from 'shared/ui'
 
 interface SidebarProps {
   className?: string

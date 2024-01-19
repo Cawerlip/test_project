@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes } from "react"
-import { classNames } from "shared/lib/classNames"
+import { ButtonHTMLAttributes } from 'react'
+import { classNames } from 'shared/lib/classNames'
 import style from './Button.module.scss'
 
 type ButtonVariant = 'clear'
@@ -15,9 +15,10 @@ export const Button = ({
   children,
   variant,
   ...rest
-}:ButtonProps) => {
+}: ButtonProps) => {
   return (
-    <button 
+    <button
+      type="button"
       className={classNames(style.button, {}, [style[variant], className])}
       {...rest}
     >
