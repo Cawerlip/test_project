@@ -1,5 +1,5 @@
 import { Link, LinkProps } from 'react-router-dom'
-import { classNames } from 'shared/lib/classNames'
+import { classNames } from 'shared/lib/classNames/classNames'
 
 import style from './AppLink.module.scss'
 
@@ -21,7 +21,7 @@ export const AppLink = ({
   ...rest
 }: AppLinkProps) => {
   return (
-    <Link 
+    <Link
       to={to}
       className={classNames(style.appLink, {}, [style[variant], className])}
       {...rest}
