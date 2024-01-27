@@ -1,4 +1,7 @@
 {
   "aboutPage": "aboutPage",
-  "mainPage": "mainPage"
+  "mainPage": "mainPage",
+  "notFoundPage": "notFoundPage",
+  "reload": "reload",
+  "throwError": "throwError"
 }
