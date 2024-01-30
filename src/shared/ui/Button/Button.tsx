@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import style from './Button.module.scss'
 
@@ -6,14 +6,14 @@ type ButtonVariant = 'clear'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
-  variant: ButtonVariant
-  children: React.ReactNode
+  variant?: ButtonVariant
+  children: ReactNode
 }
 
 export const Button = ({
   className,
   children,
-  variant,
+  variant = 'clear',
   ...rest
 }: ButtonProps) => {
   return (

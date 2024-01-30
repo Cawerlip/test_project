@@ -10,19 +10,6 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:i18next/recommended'
 	],
-	'overrides': [
-		{
-			'env': {
-				'node': true
-			},
-			'files': [
-				'.eslintrc.{js,cjs}'
-			],
-			'parserOptions': {
-				'sourceType': 'script'
-			}
-		}
-	],
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
 		'ecmaFeatures': {
@@ -43,7 +30,7 @@ module.exports = {
 		'indent': [2, 2],
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': 'warn',
-		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['variant'] }],
+		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['variant', 'data-testid'] }],
 		'linebreak-style': [
 			'error',
 			'unix'
@@ -56,5 +43,25 @@ module.exports = {
 			'warn',
 			'never'
 		]
-	}
+	},
+	'globals': {
+		__IS_DEV__: true,
+	},
+	'overrides': [
+		{
+			'env': {
+				'node': true
+			},
+			// 'files': [
+			//   '.eslintrc.{js,cjs}'
+			// ],
+			'parserOptions': {
+				'sourceType': 'script'
+			},
+			'files': ['**/src/**/*.test.{ts,tsx}'],
+			'rules': {
+				'i18next/no-literal-string': 'off'
+			}
+		}
+	],
 }
