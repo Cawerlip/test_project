@@ -3,7 +3,6 @@ import { classNames } from 'shared/lib/classNames/classNames'
 
 import style from './Sidebar.module.scss'
 import { LangSwitcher, ThemeSwitcher, Button } from 'shared/ui'
-import React from 'react'
 
 interface SidebarProps {
   className?: string
