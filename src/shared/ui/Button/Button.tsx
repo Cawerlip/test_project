@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import style from './Button.module.scss'
 
-type ButtonVariant = 'clear'
+type ButtonVariant = 'clear' | 'outline'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string

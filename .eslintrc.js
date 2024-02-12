@@ -30,7 +30,7 @@ module.exports = {
 		'indent': [2, 2],
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': 'warn',
-		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['variant', 'data-testid'] }],
+		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['variant', 'data-testid', 'to'] }],
 		'linebreak-style': [
 			'error',
 			'unix'
