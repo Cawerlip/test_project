@@ -7,4 +7,3 @@ export const AboutPage = () => {
     <div>{t('aboutPage')}</div>
   )
 }
- 

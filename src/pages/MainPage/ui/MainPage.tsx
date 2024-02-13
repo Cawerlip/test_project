@@ -4,7 +4,6 @@ export const MainPage = () => {
   const { t } = useTranslation('main')
 
   return (
-    <div>{t('mainPage')}
-    </div>
+    <div>{t('mainPage')}</div>
   )
 }

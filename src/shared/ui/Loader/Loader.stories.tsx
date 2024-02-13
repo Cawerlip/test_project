@@ -12,7 +12,7 @@ export default {
   },
 } as ComponentMeta<typeof Loader>
 
-const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />
+const Template: ComponentStory<typeof Loader> = (args: any) => <Loader {...args} />
 
 export const Light = Template.bind({})
 Light.args = {}
