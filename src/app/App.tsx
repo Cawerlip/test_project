@@ -18,7 +18,6 @@ export const App = () => {
         <Navbar />
         <div className='container'>
           <Sidebar />
-
           <AppRouter />
         </div>
       </Suspense>
