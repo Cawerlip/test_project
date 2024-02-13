@@ -6,7 +6,7 @@ on:
     branches: [ main ]  
 jobs:
   pipline:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [ 16.x ]
