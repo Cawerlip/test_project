@@ -1,4 +1,4 @@
-name: Glinting, trsting, building
+name: Linting, trsting, building
 on: 
   push:
     branches: [ main ]

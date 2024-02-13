@@ -4,5 +4,6 @@
   "loading": "loading",
   "notFoundPage": "Page not found",
   "throwError": "Something went wrong",
-  "reload": "reload"
+  "reload": "reload",
+  "toggle": "toggle"
 }
