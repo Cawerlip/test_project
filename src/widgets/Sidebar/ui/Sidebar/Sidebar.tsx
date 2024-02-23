@@ -12,7 +12,7 @@ interface SidebarProps {
 export const Sidebar = ({ className }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState<boolean>(false)
   const { t } = useTranslation()
-
+  // test
   const toggleSidebar = () => {
     setCollapsed(prev => !prev)
   }
