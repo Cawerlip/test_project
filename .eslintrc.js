@@ -31,10 +31,7 @@ module.exports = {
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': 'warn',
 		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['variant', 'data-testid', 'to'] }],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
+		'linebreak-style': 0,
 		'quotes': [
 			'warn',
 			'single'
@@ -42,7 +39,7 @@ module.exports = {
 		'semi': [
 			'warn',
 			'never'
-		]
+		],
 	},
 	'globals': {
 		__IS_DEV__: true,
