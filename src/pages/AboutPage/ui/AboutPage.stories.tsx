@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof AboutPage> = (args: any) => <AboutPage {..
 
 export const Light = Template.bind({})
 Light.args = {}
-// test  
+// test
 export const Dark = Template.bind({})
 Dark.args = {}
 
