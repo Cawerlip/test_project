@@ -1,4 +1,4 @@
-name: Linting, trsting, building
+name: Linting, testing, building
 on: 
   push:
     branches: [ main ]
@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-2019
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [ 17.x ]
 
     steps: 
       - uses: actions/checkout@v2
