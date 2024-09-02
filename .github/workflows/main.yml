@@ -21,13 +21,18 @@ jobs:
         run: npm install
       - name: build prod project
         run: npm run build:prod
+        if: always()
       - name: linting ts
         run: npm run eslint
       - name: linting css
+        if: always()
         run: npm run stylelint
       - name: unit testing
+        if: always()
         run: npm run test:unit
       - name: build storybook
+        if: always()
         run: npm run storybook:build
       - name: screenshot test
+        if: always()
         run: npm run test:ui:ci
