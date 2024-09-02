@@ -5,5 +5,8 @@
   "notFoundPage": "Page not found",
   "throwError": "Something went wrong",
   "reload": "reload",
-  "toggle": "toggle"
+  "toggle": "toggle",
+  "short": "En",
+  "lang": "English",
+  "throw error": "throw error"
 }

@@ -3,6 +3,7 @@
   "mainPage": "mainPage",
   "notFoundPage": "notFoundPage",
   "reload": "reload",
+  "throw error": "throw error",
   "throwError": "throwError",
   "toggle": "toggle"
 }

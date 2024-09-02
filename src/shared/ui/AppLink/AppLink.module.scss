@@ -1,11 +1,13 @@
 .appLink {
-  color: var(--primary-color);
+  color: var(--text);
+  outline: none;
+  text-decoration: none;
 }
 
 .primary {
-  color: var(--primary-color);
+  color: var(--text);
 }
 
 .secondary {
-  color: var(--inverted-primary-color);
+  color: var(--text);
 }

@@ -5,16 +5,31 @@ import { PageLoader } from 'widgets/PageLoader'
 
 export const AppRouter = () => {
   return (
-    <Suspense fallback={<PageLoader />}>
-      <Routes>
-        {Object.values(routeConfig).map(({ path, element }) => (
-          <Route
-            key={path}
-            path={path}
-            element={<div className='pageWrapper'>{element}</div>}
-          />
-        ))}
-      </Routes>
-    </Suspense>
+    <Routes>
+      {Object.values(routeConfig).map(({ element, path }) => (
+        <Route
+          key={path}
+          path={path}
+          element={(
+            <Suspense fallback={<PageLoader />}>
+              <div className="pageWrapper">
+                {element}
+              </div>
+            </Suspense>
+          )}
+        />
+      ))}
+    </Routes>
+    // <Suspense fallback={<PageLoader />}>
+    //   <Routes>
+    //     {Object.values(routeConfig).map(({ path, element }) => (
+    //       <Route
+    //         key={path}
+    //         path={path}
+    //         element={<div className='pageWrapper'>{element}</div>}
+    //       />
+    //     ))}
+    //   </Routes>
+    // </Suspense>
   )
 }
