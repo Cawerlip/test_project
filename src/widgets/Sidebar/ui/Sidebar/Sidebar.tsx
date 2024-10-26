@@ -58,7 +58,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
           className={style.collapsedBtn}
           variant='backgroundInverted'
           square
-        // size='l'
         >
           {collapsed ? '>' : '<'}
         </Button>

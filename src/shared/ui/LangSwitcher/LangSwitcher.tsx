@@ -8,10 +8,10 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
-  const { i18n, t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const onTranslate = async () => {
-    console.log(111)
+    console.log(i18n.language === 'ru')
     i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
   }
 
