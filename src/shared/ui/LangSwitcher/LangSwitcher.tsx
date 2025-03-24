@@ -10,10 +10,9 @@ interface LangSwitcherProps {
 export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation()
 
-  const onTranslate = async () => {
-    console.log(i18n.language === 'ru')
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
-  }
+  const onTranslate = async () => i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
+
+  console.log(i18n.language)
 
   return (
     <Button
@@ -21,7 +20,7 @@ export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
       onClick={onTranslate}
       className={classNames('', {}, [className])}
     >
-      {t(short ? 'short' : 'lang')}
+      {t(short ? 'Короткий язык' : 'Язык')}
     </Button>
   )
 }

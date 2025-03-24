@@ -1,9 +1,10 @@
 {
+  "Login": "Login",
   "aboutPage": "aboutPage",
+  "login": "login",
   "mainPage": "mainPage",
   "notFoundPage": "notFoundPage",
   "reload": "reload",
   "throw error": "throw error",
-  "throwError": "throwError",
-  "toggle": "toggle"
+  "throwError": "throwError"
 }
