@@ -1,3 +1,5 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
 :root {
   --font-family-main: consolas, monospace;
   --font-size-m: 16px;
@@ -19,5 +21,5 @@
   --modal-z-index: 10;
 
   // цвета
-  --overlay-color: rgb(0 0 0 / 70%);
+  --overlay-color: rgba(0, 0, 0, 0.7);
 }
