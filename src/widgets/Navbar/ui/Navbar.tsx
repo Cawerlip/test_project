@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { useCallback, useState } from 'react'
 import { Modal } from 'shared/ui/Modal/Modal'
 import { Button } from 'shared/ui'
+import { Portal } from 'shared/ui/Portal/Portal'
 interface NavbarProps {
   className?: string
 }
@@ -25,10 +26,12 @@ export const Navbar = ({ className }: NavbarProps) => {
       >
         {t('login')}
       </Button>
-      {/* eslint-disable-next-line i18next/no-literal-string */}
-      <Modal isOpen={isAuthModalOpen} onClose={onToggleModal}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam amet deleniti non praesentium, officiis itaque sit officia velit unde illum eos ab quos porro quisquam incidunt neque laborum reprehenderit?
-      </Modal>
+      <Portal>
+        {/* eslint-disable-next-line i18next/no-literal-string */}
+        <Modal isOpen={isAuthModalOpen} onClose={onToggleModal}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam amet deleniti non praesentium, officiis itaque sit officia velit unde illum eos ab quos porro quisquam incidunt neque laborum reprehenderit?
+        </Modal>
+      </Portal>
     </div >
   )
 }
